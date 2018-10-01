@@ -1,0 +1,37 @@
+{
+  "name": "travel-site",
+  "version": "1.0.0",
+  "description": "Example files from UDEMY courde \"Git a Web Developer Job: Mastering the Modern Workflow\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Necron9x11/travel-site.git"
+  },
+  "keywords": [
+    "git",
+    "udemy",
+    "node.js",
+    "npm",
+    "html",
+    "css",
+    "trainig",
+    "class",
+    "developer",
+    "development",
+    "coding",
+    "programming"
+  ],
+  "author": "Brad Schiff: Instructor. Daniel Raphael: Any not provided modifications during the course fo the class.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Necron9x11/travel-site/issues"
+  },
+  "homepage": "https://github.com/Necron9x11/travel-site#readme",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "normalize.css": "^8.0.0"
+  }
+}
