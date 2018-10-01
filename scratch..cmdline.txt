@@ -1,0 +1,97 @@
+Command Notes
+
+*****************************************************************************
+GIT COMMANDS
+*****************************************************************************
+
+Create a Git Repo (initialize a new local repo)
+  git init
+
+Check Status of all files in the Working Directory
+  git status
+
+Add a File to the Git Staging Area (files put in staging get added to the repo witht he commity command)
+  git add <filename>
+
+Add All Eligible File to the Git Staging Area (files put in staging get added to the repo witht he commity command)
+  git add -A
+
+Commit Staged Files to the Local Repo
+  git commit -m "<note about the files being committed>"
+
+Check Origin Path (server address of where Git thinks you want to push your code to)
+  git remote -v
+
+Set Repo Origin Path
+  git remote set-url origin git@github.com:Necron9x11/travel-site.git
+
+Push Code in Local Repo up to Repo on GitHub (sync local repo with remote repo)
+  git push origin master
+
+Delete Folder From Git Repo But Not From Local Working Tree
+  git rm -r --cached <folder name>
+
+Delete File From Git Repo But Not From Local Working Tree
+  git rm --cached <file name>
+
+
+
+*****************************************************************************
+NPM COMMANDS
+*****************************************************************************
+
+Update NPM
+  npm i -g npm
+
+Install Node.JS Package
+
+ npm install --save <package name>
+
+  in 2018 the --save  is no longer necessary; packages are saved into package.json
+  by default. Although you still might want to use --save-dev  if you want to
+  differentiate a package as a dev-dependency instead of a core dependency. You
+  can read more on that topic here:
+
+     https:/
+
+Install Node.JS Package GLobally (for the entire system and not just a specific project)
+
+
+
+******************************************************************************
+NPM ISSUES
+******************************************************************************
+
+  npm WARN enoent ENOENT: no such file or directory, open '/<absolute file path>/package.json'
+
+    You can resolve that issue by following methods:
+
+    1. Ensure dependencies described correctly on package.json
+    2. Just type npm install and hit Enter.
+    3. Check issue still exists. and If issue not resolved, continue these methods.
+    4. type npm cache clean and hit Enter
+    5. type sudo npm install -g npm and hit Enter.
+    6. Retry npm install and hit Enter.
+
+
+/stackoverflow.com/questions/22891211/what-is-the-difference-between-save-and-save-dev
+
+Node and NPM run from a 'bad' location:
+
+  /usr/lib/nodejs/node-v8.9.1/bin/npm
+  /usr/lib/nodejs/node-v8.9.1/bin/node
+
+  Because of this sudo will not run node or npm properly.
+
+  To resolve this create symlinks in the /usr/bin/ directory for each program.
+
+     sudo ln -s /usr/lib/nodejs/node-v8.9.1/bin/node /usr/bin/node
+     sudo ln -s /usr/lib/nodejs/node-v8.9.1/bin/npm /usr/bin/npm
+
+
+
+*******************************************************************************
+GULP COMMANDS
+*******************************************************************************
+
+
