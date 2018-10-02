@@ -1,0 +1,30 @@
+GULP
+
+➜  travel-site git:(master) ✗ npm install gulp
+npm WARN deprecated gulp-util@3.0.8: gulp-util is deprecated - replace it, following the guidelines at https://medium.com/gulpjs/gulp-util-ca3b1f9f9ac5
+npm WARN deprecated graceful-fs@3.0.11: please upgrade to graceful-fs 4 for compatibility with current and future versions of Node.js
+npm WARN deprecated minimatch@2.0.10: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue
+npm WARN deprecated minimatch@0.2.14: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue
+npm WARN notice [SECURITY] lodash has the following vulnerability: 1 low. Go here for more details: https://nodesecurity.io/advisories?search=lodash&version=1.0.2 - Run `npm i npm@latest -g` to upgrade your npm version, and then `npm audit` to get more info.
+npm WARN deprecated graceful-fs@1.2.3: please upgrade to graceful-fs 4 for compatibility with current and future versions of Node.js
+npm WARN notice [SECURITY] minimatch has the following vulnerability: 1 high. Go here for more details: https://nodesecurity.io/advisories?search=minimatch&version=0.2.14 - Run `npm i npm@latest -g` to upgrade your npm version, and then `npm audit` to get more info.
+npm WARN notice [SECURITY] minimatch has the following vulnerability: 1 high. Go here for more details: https://nodesecurity.io/advisories?search=minimatch&version=2.0.10 - Run `npm i npm@latest -g` to upgrade your npm version, and then `npm audit` to get more info.
++ gulp@3.9.1
+added 253 packages in 34.945s
+
+----------------------------------------------------------------------------------
+GULP-WATCH
+
+➜  travel-site git:(master) ✗ npm install gulp-watch
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
++ gulp-watch@4.3.11
+added 72 packages from 29 contributors and audited 2352 packages in 12.491s
+found 5 vulnerabilities (1 low, 4 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+-------------------------------------------------------------------------------
+
+# Run  npm install --save-dev gulp@4.0.0  to resolve 5 vulnerabilities
+SEMVER WARNING: Recommended action is a potentially breaking change

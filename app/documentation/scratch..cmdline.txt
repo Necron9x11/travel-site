@@ -57,6 +57,7 @@ Install Node.JS Package
 Install Node.JS Package GLobally (for the entire system and not just a specific project)
 
 
+Install and Save to devDependencies in package.json
 
 ******************************************************************************
 NPM ISSUES
@@ -95,3 +96,39 @@ GULP COMMANDS
 *******************************************************************************
 
 
+
+*******************************************************************************
+SS Pre/Post Processors
+*******************************************************************************
+
+Saas
+Less
+Stylus
+PostCSS
+
+To process CSS we will need:
+gulp.src()
+gulp.dest()
+pipe()
+
+
+*******************************************************************************
+POSTCSS AUTO PREFIXER ERRORS
+*******************************************************************************
+
+➜  travel-site git:(master) ✗ gulp watch
+/home/necron9x11/Code/git/travel-site/gulpfile.js:33
+});
+^
+
+SyntaxError: Unexpected token }
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:599:28)
+    at Object.Module._extensions..js (module.js:646:10)
+    at Module.load (module.js:554:32)
+    at tryModuleLoad (module.js:497:12)
+    at Function.Module._load (module.js:489:3)
+    at Module.require (module.js:579:17)
+    at require (internal/module.js:11:18)
+    at execute (/usr/lib/nodejs/node-v8.9.1/lib/node_modules/gulp-cli/lib/versioned/^3.7.0/index.js:28:18)

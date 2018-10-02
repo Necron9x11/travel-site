@@ -1,0 +1,140 @@
+This documents the process by which the course environment has been setup and
+includes notes on functionality, tweaks/mods to the instructors prescribed
+methods /techniques, issues/errors encountered, etc.
+
+Initial Environment Configuration
+---------------------------------
+
+1. Install a text editor of your choice
+
+    I am using PyCharm from JetBrains. This is not wholly ideal as it
+    does not handle code colorization or intelisense for CSS or Gulp
+    and its add-ons, etc. The same goes for JavaScript - in the free
+    Community version at least. An individual developers license is
+    ~149$ or ~14$ a month subscription.
+
+    Could probably find plugins for VIM to handle the colorization.
+    Not sure if VIM's has intelisense capabilities or not.
+
+2. Install node.js and NPM
+
+    Download from https://nodejs.org/en/ and install.
+    NPM is installed as part of the Node installation.
+
+    Then update the npm install:
+
+      #  npm i npm@latest -g
+
+3. Install Git.
+
+    For Linux either install via your distro's package manager or build it
+    from source.
+
+    Install With the Distro's Package Manager
+    -----------------------------------------
+
+    To install on Ubuntu/Debian variants:
+
+       # apt-get install git
+
+    Typically the version available in a distro's repo will not be the most
+    currently available stable build. For Ubuntu there is a PPA of the
+    most recent stable upstream Git version.
+
+    NOTE: Currently even though this installs the PPA repo apt-get install
+    still defaults to installing git 2.19.0, the version officially supported
+    by Ubuntu 16.04LTS, as opposed to the most recent PPA version which is
+    (as of now) 2.7.4. (the MOST current release as of now is actually 2.9.5.
+
+    To install the PPA first install the PPA's repo:
+
+        # sudo add-apt-repository ppa:git-core/ppa
+
+        NOTE: If you don't know what a PPA is read up on them here:
+
+            https://askubuntu.com/questions/4983/what-are-ppas-and-how-do-i-use-them/4990#4990
+
+        And here:
+        
+            https://askubuntu.com/questions/4983/what-are-ppas-and-how-do-i-use-them
+
+    Determine the newest version of Git currently availabel to you:
+
+        # apt list git -a
+
+    Install the latest version:
+
+
+        # apt update
+        # apt-get install "git 2.7.4"
+
+    Check Git installed properly and the requested version was installed:
+
+        # git -version
+
+    NOTE: if add-apt-repository fails with "command not found" install
+    the python-software-properties package:
+
+        # apt-get install python-software-properties
+
+    Build from Source
+    -----------------
+
+    To build from source, first download the latest releases tarball from:
+    (I have not tested this process and it was nto defined in the course
+     as the course was Mac/Windows centric so ther emay be additional steps)
+
+        https://mirrors.edge.kernel.org/pub/software/scm/git/
+
+    Then extract the files:
+
+        # tar -xvf git-2.9.5.tar.gz
+
+    Then change into the new directory with the un-tar'd source and build:
+
+        # cd git-2.9.5
+
+    Make sure you have the required dependencies to build. Usually all that
+    may be missing is build-essential so check for that.
+
+        # apt list build-essential
+
+        If build-essential is not install then install it:
+
+            # apt-get install build-essential
+
+    Now build Git:
+
+        # ./configure && make && sudo make install
+
+4. Create a folder to install the classes dev environment to:
+
+        make sure you are in your home directory:
+
+            # cd ~
+
+        create a directory to house git projects:
+
+            # mkdir git
+
+5. Create the courses dev environment. This is done by cloning the instructors
+   git repo for the class materials.
+
+
+
+   Change directories to your git projects directory and clone the course
+   materials from GitHub:
+
+        # cd ./git
+
+        (or # cd ~/git if you have changed directories since creating your git directory)
+
+        # git clone https://github.com/LearnWebCode/welcome-to-git.git
+
+   NOTE: You can browse to https://github.com/LearnWebCode/welcome-to-git
+   as well to view the projects GitHub repo pages.
+
+
+
+
+
