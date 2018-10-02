@@ -55,7 +55,7 @@ Initial Environment Configuration
             https://askubuntu.com/questions/4983/what-are-ppas-and-how-do-i-use-them/4990#4990
 
         And here:
-        
+
             https://askubuntu.com/questions/4983/what-are-ppas-and-how-do-i-use-them
 
     Determine the newest version of Git currently availabel to you:
@@ -120,8 +120,6 @@ Initial Environment Configuration
 5. Create the courses dev environment. This is done by cloning the instructors
    git repo for the class materials.
 
-
-
    Change directories to your git projects directory and clone the course
    materials from GitHub:
 
@@ -135,6 +133,34 @@ Initial Environment Configuration
    as well to view the projects GitHub repo pages.
 
 
+6. Install NPM Packages Local to the Project's Code
+
+   1. jquery
+
+   2. normalize.css
+
+      An alternative to CSS resets. Adjusts the styles ofd certain elements in
+      order to make all web browsers render sites more consistently.
 
 
+7. Install Development Specific NPM Packages
 
+   NOTE: These are not related to the actual ite wew are building but
+   rather to aid in the development of the code itself.
+
+   gulp-cli
+
+   autoprefixer
+
+   gulp
+
+   gulp-postcss
+
+   postcss-simple-vars
+
+   postcss-import
+
+      If you usecssImport after cssvars, in a gulp .pipe(),  the variables
+      which were imported may remain unchanged.
+
+   postcss-nested
